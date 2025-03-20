@@ -43,12 +43,13 @@ Flask_API/
 
 ### Python Dependencies
 
-Flask==2.0.1
+```Flask==2.0.1
 celery==5.2.7
 redis==4.3.4
 pandas==1.4.2
 pytz==2022.1
 Werkzeug==2.0.2
+```
 
 ## Installation
 
