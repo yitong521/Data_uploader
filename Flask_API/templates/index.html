@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Data Processing System</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Transaction Data Processing System</h2>
+        
+        <div class="upload-section">
+            <h3>Upload Transaction Data</h3>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-input-container">
+                    <input type="file" id="files" name="files" accept=".csv,.json,.xml" multiple required>
+                    <button type="submit" class="button">Upload Files</button>
+                </div>
+            </form>
+            <div id="response"></div>
+        </div>
+        
+        <div class="search-section">
+            <h3>Search and Control</h3>
+            <div>
+                <input type="text" id="searchInput" placeholder="Search by UTI or ISIN">
+                <button onclick="searchDatabase()" class="button">Search</button>
+                <button onclick="viewDatabase()" class="button">View All</button>
+                <button onclick="resetDatabase()" class="button reset">Reset Database</button>
+            </div>
+        </div>
+
+        <div id="stats" class="stats"></div>
+
+        <div id="tableContainer" class="table-container">
+            <div id="databaseContent"></div>
+        </div>
+
+        <script src="/static/scripts.js"></script>
+    </div>
+</body>
+</html>

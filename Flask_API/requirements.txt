@@ -1,0 +1,7 @@
+Flask
+pandas
+Werkzeug
+sqlite3
+python-dateutil
+Flask-CORS
+pytz==2022.1
